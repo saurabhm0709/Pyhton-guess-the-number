@@ -9,7 +9,7 @@ def play_again():
 
 def guess_number():
 
-  current_score = 5
+  current_score = 20
   secret_number = random.randint(1,20)
 
   global highest_score
@@ -27,7 +27,7 @@ def guess_number():
       print('Highest score: ',highest_score)
       print()
       if play_again():
-        current_score = 5
+        current_score = 20
         secret_number = random.randint(1,20)
         continue
       else:
